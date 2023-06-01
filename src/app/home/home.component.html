@@ -1,0 +1,27 @@
+<div class="container">
+  <header class="header">Chess Board</header>
+  <div (click)="startGame()" class="reset-button">
+    <span class="reset-text">Create new game</span>
+  </div>
+  <div class="chess-board">
+    <div>
+      <iframe #player1 [src]="player1FrameUrl" class="frame"></iframe>
+    </div>
+    <div>
+      <iframe #player2 [src]="player2FrameUrl" class="frame"></iframe>
+    </div>
+  </div>
+</div>
+<div *ngIf="!onGame" class="alert-dropback">
+</div>
+<div  *ngIf="!onGame" class="alert-container">
+  <div class="start-new-game" (click)="startGame()">
+    <div *ngIf="winner">
+      <span>Winner {{winner}}</span>
+    </div>
+    <div>
+      <span>Start new game</span>
+    </div>
+  </div>
+</div>
+

@@ -1,0 +1,11 @@
+<div [ngClass]="{'container': true, 'dark-container': isRevered, 'light-container': !isRevered}">
+  <div class="header-container"><span>{{playerName}}</span></div>
+  <div class="board-container">
+    <ngx-chess-board #board [dragDisabled]="!myMove" [drawDisabled]="!myMove"
+                     [showLegalMoves]="myMove"
+                     (moveChange)="onMoveChange($event)" class="board" [lightDisabled]="isRevered" [darkDisabled]="!isRevered"></ngx-chess-board>
+  </div>
+  <div *ngIf="!myMove" class="hold-container">
+    <span [ngClass]="{'hold-text': true, 'dark-hold-text': isRevered, 'light-hold-text': !isRevered}">Hold</span>
+  </div>
+</div>

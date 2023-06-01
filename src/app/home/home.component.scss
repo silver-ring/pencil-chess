@@ -1,0 +1,73 @@
+.container {
+  width: 70vw;
+  display: flex;
+  flex-direction: column;
+  background: darkgrey;
+  margin: 5% 0 0 15vw;
+  height: 80vh;
+}
+.header {
+  width: 100%;
+  text-align: center;
+  margin-top: 10px;
+}
+.frame {
+  border: none;
+}
+.reset-button {
+  border: black;
+  background: black;
+  width: 10rem;
+  height:10rem;
+  margin-top:10px;
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.reset-text {
+  color: white;
+}
+.alert-dropback {
+  z-index: 100;
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: black;
+  opacity: 0.3;
+}
+.alert-container {
+  z-index: 110;
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.start-new-game {
+  background: yellow;
+  height: 5rem;
+  width: 20rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: black 5px solid;
+  flex-direction: column;
+  cursor: pointer;
+}
+.chess-board {
+  display: flex;
+  margin: 5% 0 0 0;
+  justify-content: space-evenly;
+  iframe {
+    width: 30vw;
+    height: 65vh;
+  }
+}

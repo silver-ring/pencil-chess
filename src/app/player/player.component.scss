@@ -1,0 +1,37 @@
+.light-container {
+  background: white;
+  color: black;
+}
+.dark-container {
+  background: black;
+  color: white;
+}
+.header-container {
+  text-align: center;
+}
+.board-container {
+  border: 1px black solid;
+}
+.hold-container {
+  z-index: 100;
+  position: fixed;
+  top:0;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.dark-hold-text {
+  background: white;
+  color: black;
+}
+.light-hold-text {
+  background: black;
+  color: white;
+}
+.hold-text {
+  width: 100%;
+  text-align: center;
+  margin-right:3%;
+}
