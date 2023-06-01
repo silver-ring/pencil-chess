@@ -55,6 +55,10 @@ export class HomeComponent implements OnInit {
         this.onGame = false;
         this.winner = ev.data?.source;
       }
+      if (ev.data.event?.stalemate) {
+        this.onGame = false;
+        this.winner = 'Draw';
+      }
     });
   }
 
